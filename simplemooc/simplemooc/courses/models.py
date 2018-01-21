@@ -25,3 +25,6 @@ class Course(models.Model):
         'Atualizado em', auto_now=True
     )
     objects = CourseManager()
+
+    def __str__(self):
+        return self.name
